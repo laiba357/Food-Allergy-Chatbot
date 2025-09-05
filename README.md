@@ -8,101 +8,115 @@ Food allergies can pose severe health risks, and immediate access to reliable in
 
 ## Features
 
-- **Comprehensive Dataset Integration**  
+* *Comprehensive Dataset Integration*
   Includes CSV, PDF, and text sources, normalized into a structured SQLite database.
-  
-- **Interactive Chatbot**  
+
+* *Interactive Chatbot*
   Answers user queries about food allergens, symptoms, and management.
 
-- **Emergency Guidance**  
+* *Emergency Guidance*
   Provides immediate response information for critical allergy cases.
 
-- **Modular Architecture**  
-  - Dataset Preprocessing (`table-creation.ipynb`)
-  - Chatbot Development (`chatbot-development.ipynb`)
+* *Modular Architecture*
+
+  * Dataset Preprocessing (table-creation.ipynb)
+  * Chatbot Development (chatbot-development.ipynb)
 
 ## Project Structure
 
-## Project Structure
-Food_Allergy_Chatbot/ <br>
-│── Complete Dataset/             # Raw dataset files and documentation <br>
-│   └── Raw/                      # Unprocessed source files <br>
-│   └── README_DATASET.md         # Dataset documentation <br>
-│── data/ <br>
-│   └── food_allergy.db           # Final structured dataset (SQLite) <br>
-│── table-creation.ipynb          # Notebook for database table creation <br>
-│── chatbot-development.ipynb     # Notebook for chatbot implementation <br>
-│── requirements.txt              # Python dependencies <br>
-│── LICENSE                       # MIT License for open-source distribution <br>
-│── CITATION.cff                  # Citation metadata for academic/research use <br>
-│── README.md                     # Main project documentation <br>
+
+Food_Allergy_Chatbot/
+│── Complete Dataset/             
+│   ├── Raw/                      
+│   └── README_DATASET.md         
+│── data/
+│   └── food_allergy.db           
+│── table-creation.ipynb          
+│── chatbot-development.ipynb     
+│── requirements.txt              
+│── LICENSE                       
+│── CITATION.cff                  
+│── README.md                     
 
 
 ## Dataset
 
 The dataset consolidates various food allergy-related resources:
 
-- **CSV Files**: Allergy alerts and food data.
-- **PDF Documents**: Educational and statistical reports.
-- **Text Files**: Practical guidelines and symptom management protocols.
+* *CSV Files*: Allergy alerts and food data.
+* *PDF Documents*: Educational and statistical reports.
+* *Text Files*: Practical guidelines and symptom management protocols.
 
-This data is parsed, normalized, and stored in an SQLite database (`food_allergy.db`) for efficient querying.
+This data is parsed, normalized, and stored in an SQLite database (food_allergy.db) for efficient querying.
 
 ## Workflow
 
-1. **Data Preprocessing**
-   - Extract and clean raw datasets.
-   - Create database schema with tables:
-     - Emergency Symptoms
-     - Precautions
-     - Prevention Tips
-     - Treatments
-     - Food Data
-     - Food Allergies
-     - Product Recalls
+1. *Data Preprocessing*
 
-2. **Database Creation**
-   - Executed using `table-creation.ipynb`.
-   - Ensures data integrity and portability.
+   * Extract and clean raw datasets.
+   * Create database schema with tables:
 
-3. **Chatbot Development**
-   - Implemented in `chatbot-development.ipynb`.
-   - Uses NLP techniques for user query understanding.
-   - Fetches relevant data from the SQLite database.
+     * Emergency Symptoms
+     * Precautions
+     * Prevention Tips
+     * Treatments
+     * Food Data
+     * Food Allergies
+     * Product Recalls
+
+2. *Database Creation*
+
+   * Executed using table-creation.ipynb.
+   * Ensures data integrity and portability.
+
+3. *Chatbot Development*
+
+   * Implemented in chatbot-development.ipynb.
+   * Uses NLP techniques for user query understanding.
+   * Fetches relevant data from the SQLite database.
 
 ## Installation
 
 1. Clone the repository:
-  
-   `git clone https://github.com/yourusername/Food_Allergy_Chatbot.git`
-   `cd Food_Allergy_Chatbot`
 
-Install required dependencies:
+   bash
+   git clone https://github.com/yourusername/Food_Allergy_Chatbot.git
+   cd Food_Allergy_Chatbot
+   
 
-`pip install -r requirements.txt`
-Ensure you have Jupyter Notebook installed to run the .ipynb files:
+2. Install required dependencies:
 
-pip install notebook
+   bash
+   pip install -r requirements.txt
+   
+
+   Ensure you have Jupyter Notebook installed to run the .ipynb files:
+
+   bash
+   pip install notebook
+   
 
 ## Usage
-Create the Database
-Open and `run table-creation.ipynb`.
 
-## Run the Chatbot
+1. *Create the Database*
+   Open and run table-creation.ipynb.
 
-Open chatbot-development.ipynb and execute all cells.
-
-Interact with the chatbot by typing queries related to food allergies.
+2. *Run the Chatbot*
+   Open chatbot-development.ipynb and execute all cells.
+   Interact with the chatbot by typing queries related to food allergies.
 
 ## Future Work
-- Develop a user-friendly interface using Streamlit or Flask for real-time interaction.  
-- Expand the dataset to include global allergens and localized dietary data.  
-- Implement multi-language support for broader accessibility.  
-- Integrate with healthcare systems and electronic health records (EHR) for seamless clinical use.  
-- Deploy as a web application, API, or chatbot on popular platforms (Telegram, WhatsApp, etc.).  
+
+* Develop a user-friendly interface using Streamlit or Flask for real-time interaction.
+* Expand the dataset to include global allergens and localized dietary data.
+* Implement multi-language support for broader accessibility.
+* Integrate with healthcare systems and electronic health records (EHR) for seamless clinical use.
+* Deploy as a web application, API, or chatbot on popular platforms (Telegram, WhatsApp, etc.).
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Author
-Developed by **Laiba Fatima**
+
+Developed by *Laiba Fatima*
