@@ -29,7 +29,7 @@ Food_Allergy_Chatbot/
 │── Complete Dataset/             
 │   ├── Raw/                      
 │   └── README_DATASET.md         
-│── data/
+│── data/ <br>
 │   └── food_allergy.db           
 │── table-creation.ipynb          
 │── chatbot-development.ipynb     
