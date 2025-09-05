@@ -8,28 +8,28 @@ Food allergies can pose severe health risks, and immediate access to reliable in
 
 ## Features
 
-* *Comprehensive Dataset Integration*
+* **Comprehensive Dataset Integration**
   Includes CSV, PDF, and text sources, normalized into a structured SQLite database.
 
-* *Interactive Chatbot*
+* **Interactive Chatbot**
   Answers user queries about food allergens, symptoms, and management.
 
-* *Emergency Guidance*
+* **Emergency Guidance**
   Provides immediate response information for critical allergy cases.
 
-* *Modular Architecture*
+* **Modular Architecture**
 
-  * Dataset Preprocessing (table-creation.ipynb)
-  * Chatbot Development (chatbot-development.ipynb)
+  * Dataset Preprocessing (`table-creation.ipynb`)
+  * Chatbot Development (`chatbot-development.ipynb`)
 
 ## Project Structure
 
-
+```
 Food_Allergy_Chatbot/
 │── Complete Dataset/             
 │   ├── Raw/                      
 │   └── README_DATASET.md         
-│── data/ <br>
+│── data/
 │   └── food_allergy.db           
 │── table-creation.ipynb          
 │── chatbot-development.ipynb     
@@ -37,21 +37,21 @@ Food_Allergy_Chatbot/
 │── LICENSE                       
 │── CITATION.cff                  
 │── README.md                     
-
+```
 
 ## Dataset
 
 The dataset consolidates various food allergy-related resources:
 
-* *CSV Files*: Allergy alerts and food data.
-* *PDF Documents*: Educational and statistical reports.
-* *Text Files*: Practical guidelines and symptom management protocols.
+* **CSV Files**: Allergy alerts and food data.
+* **PDF Documents**: Educational and statistical reports.
+* **Text Files**: Practical guidelines and symptom management protocols.
 
-This data is parsed, normalized, and stored in an SQLite database (food_allergy.db) for efficient querying.
+This data is parsed, normalized, and stored in an SQLite database (`food_allergy.db`) for efficient querying.
 
 ## Workflow
 
-1. *Data Preprocessing*
+1. **Data Preprocessing**
 
    * Extract and clean raw datasets.
    * Create database schema with tables:
@@ -64,14 +64,14 @@ This data is parsed, normalized, and stored in an SQLite database (food_allergy.
      * Food Allergies
      * Product Recalls
 
-2. *Database Creation*
+2. **Database Creation**
 
-   * Executed using table-creation.ipynb.
+   * Executed using `table-creation.ipynb`.
    * Ensures data integrity and portability.
 
-3. *Chatbot Development*
+3. **Chatbot Development**
 
-   * Implemented in chatbot-development.ipynb.
+   * Implemented in `chatbot-development.ipynb`.
    * Uses NLP techniques for user query understanding.
    * Fetches relevant data from the SQLite database.
 
@@ -79,30 +79,30 @@ This data is parsed, normalized, and stored in an SQLite database (food_allergy.
 
 1. Clone the repository:
 
-   bash
+   ```
    git clone https://github.com/yourusername/Food_Allergy_Chatbot.git
    cd Food_Allergy_Chatbot
-   
+   ```
 
 2. Install required dependencies:
 
-   bash
+   ```
    pip install -r requirements.txt
-   
+   ```
 
-   Ensure you have Jupyter Notebook installed to run the .ipynb files:
+   Ensure you have Jupyter Notebook installed to run the `.ipynb` files:
 
-   bash
+   ```
    pip install notebook
-   
+   ```
 
 ## Usage
 
-1. *Create the Database*
-   Open and run table-creation.ipynb.
+1. **Create the Database**
+   Open and run `table-creation.ipynb`.
 
-2. *Run the Chatbot*
-   Open chatbot-development.ipynb and execute all cells.
+2. **Run the Chatbot**
+   Open `chatbot-development.ipynb` and execute all cells.
    Interact with the chatbot by typing queries related to food allergies.
 
 ## Future Work
@@ -119,4 +119,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Author
 
-Developed by *Laiba Fatima*
+Developed by **Laiba Fatima**
