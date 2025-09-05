@@ -23,15 +23,19 @@ Food allergies can pose severe health risks, and immediate access to reliable in
 
 ## Project Structure
 
+## Project Structure
 Food_Allergy_Chatbot/ <br>
-│── Complete Dataset/ # Raw dataset files and documentation <br>
-│ └── Raw/ # Unprocessed source files <br> 
-│ └── README_DATASET.md # Dataset documentation <br>
+│── Complete Dataset/             # Raw dataset files and documentation <br>
+│   └── Raw/                      # Unprocessed source files <br>
+│   └── README_DATASET.md         # Dataset documentation <br>
 │── data/ <br>
-│ └── food_allergy.db # Final structured dataset (SQLite)  <br>
-│── table-creation.ipynb # Notebook for database table creation <br>
-│── chatbot-development.ipynb # Notebook for chatbot implementation <br>
-│── README.md # Main project documentation <br>
+│   └── food_allergy.db           # Final structured dataset (SQLite) <br>
+│── table-creation.ipynb          # Notebook for database table creation <br>
+│── chatbot-development.ipynb     # Notebook for chatbot implementation <br>
+│── requirements.txt              # Python dependencies <br>
+│── LICENSE                       # MIT License for open-source distribution <br>
+│── CITATION.cff                  # Citation metadata for academic/research use <br>
+│── README.md                     # Main project documentation <br>
 
 
 ## Dataset
