@@ -13,18 +13,16 @@ The system integrates a **manually collected dataset** from multiple sources (CS
 - Evaluation with metrics such as **accuracy, precision, recall**.
 
 ## Project Structure
-Food_Allergy_Chatbot/
-│── Complete Dataset/ # Raw dataset files and documentation
-│ └── Raw/ # Unprocessed source files
-│ └── README_DATASET.md # Dataset documentation
-│── data/
-│ └── food_allergy.db # Final structured dataset (SQLite)
-│── table-creation.ipynb # Notebook for database table creation
-│── chatbot-development.ipynb # Notebook for chatbot implementation
-│── README.md # Main project documentation
-
-markdown
-Copy code
+Food_Allergy_Chatbot/ <br>
+│── Complete Dataset/ # Raw dataset files and documentation <br>
+│ └── Raw/ # Unprocessed source files <br>
+│ └── README_DATASET.md # Dataset documentation <br>
+│── data/<br>
+│ └── food_allergy.db # Final structured dataset (SQLite) <br>
+│── table-creation.ipynb # Notebook for database table creation <br>
+│── chatbot-development.ipynb # Notebook for chatbot implementation <br>
+│── README.md # Main project documentation <br>
+ <br>
 
 ## Data Sources
 The dataset was built from:
